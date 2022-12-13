@@ -200,14 +200,16 @@
       }
       var id = init();
       function deleteData(id) {
+        console.log(id)
         if(id!=3){
-        fetch(`https://retoolapi.dev/2PlLEF/data/${id}`, {
-          method: 'DELETE'
-        }).then(message => {
-          console.log('DELETE successful!');
-        }).catch(message => {
-          console.log('Could not DELETE');
-        })
+          console.log('entrei')
+          fetch(`https://retoolapi.dev/2PlLEF/data/${id}`, {
+            method: 'DELETE'
+          }).then(message => {
+            console.log('DELETE successful!');
+          }).catch(message => {
+            console.log('Could not DELETE');
+          })
         }
       }
 
